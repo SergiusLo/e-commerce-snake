@@ -1,4 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Phone from '@/components/Phone';
 import { Check, Star } from "lucide-react";
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
-              <div className='absolute inset-x-0 bottom-0 bg-gradient-to-t via-slate-50/50 from-slate-50 h-28' />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t via-slate-50/50 from-slate-50 h-28" />
                 <img src="/snake-1.png" className="w-full" />
               </div>
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
@@ -80,6 +81,18 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit">
+            <div className="relative md:max-w-xl">
+              <img
+                src="/your-image.png"
+                className="absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden"
+                alt=""
+              />
+              <img src="/line.png" alt="" className='absolute w-20 -left-6 -bottom-6 select-none' />
+              <Phone className='w-64' imgSrc='/testimonials/1.jpg'/>
             </div>
           </div>
         </MaxWidthWrapper>
